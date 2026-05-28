@@ -1,1 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culinária Japonesa: Sabores do Oriente</title>
+    <style>
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #bc002d; /* Vermelho da bandeira do Japão */
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Seção de Introdução */
+        .intro {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            border-left: 5px solid #bc002d;
+        }
+
+        /* Grade de Pratos */
+        .grid-comidas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Cartão de cada prato */
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Espaço reservado para imagem (pode substituir o link do Unsplash se quiser) */
+        .card-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .img-sushi { background-image: url('https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=500'); }
+        .img-ramen { background-image: url('https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500'); }
+        .img-tempura { background-image: url('https://images.unsplash.com/photo-1581242163695-19d0acfd486f?w=500'); }
+
+        .card-conteudo {
+            padding: 1.5rem;
+        }
+
+        .card-conteudo h3 {
+            color: #bc002d;
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 1rem;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sabores do Japão</h1>
+        <p>Uma jornada gastronômica pela tradição e delicadeza da culinária japonesa</p>
+    </header>
+
+    <div class="container">
+        
+        <section class="intro">
+            <h2>A Arte da Culinária Japonesa (Washoku)</h2>
+            <p>A cozinha tradicional japonesa, conhecida como <strong>Washoku</strong>, é baseada no respeito à natureza e na seleção rigorosa de ingredientes sazonais. Mais do que apenas alimentar, os pratos buscam o equilíbrio perfeito entre cores, texturas e os cinco sabores básicos: doce, salgado, azedo, amargo e o famoso <em>umami</em>.</p>
+        </section>
+
+        <main class="grid-comidas">
+            
+            <article class="card">
+                <div class="card-img img-sushi"></div>
+                <div class="card-conteudo">
+                    <h3>Sushi</h3>
+                    <p>Talvez o prato japonês mais famoso do mundo. Consiste em arroz temperado com vinagre de arroz, açúcar e sal, combinado com outros ingredientes, geralmente peixe cru ou frutos do mar frescos, além de vegetais e algas (nori).</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img img-ramen"></div>
+                <div class="card-conteudo">
+                    <h3>Ramen</h3>
+                    <p>Uma reconfortante sopa de macarrão que se tornou um fenômeno global. É composto por um caldo rico e complexo (à base de porco, frango ou peixe), macarrão de trigo artesanal e acompanhamentos como fatias de carne (chashu), ovo cozido e broto de bambu.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-img img-tempura"></div>
+                <div class="card-conteudo">
+                    <h3>Tempura</h3>
+                    <p>Introduzido pelos portugueses no século XVI e aperfeiçoado pelos japoneses. Consiste em pedaços de mariscos, peixes ou vegetais fritos em uma massa incrivelmente leve e crocante, servidos com um molho à base de dashi e shoyu.</p>
+                </div>
+            </article>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Explorando o Japão. Feito com fins educativos.</p>
+    </footer>
+
+</body>
+</html>
